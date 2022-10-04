@@ -1,16 +1,15 @@
-# This is a sample Python script.
+class Dog:
+    attr1  = "mammal"
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    def __init__(self, name ):
+        self.name = name
 
+Rodger  =  Dog("Rodger")
+Tommy = Dog("Tommy")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+print("Rodger is a {}".format(Rodger.__class__.attr1))
+print("Tommy is also a {}".format(Tommy.__class__.attr1))
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Accessing instance attributes
+print("My name is {}".format(Rodger.name))
+print("My name is {}".format(Tommy.name))
